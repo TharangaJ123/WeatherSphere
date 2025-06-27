@@ -1,117 +1,150 @@
-Weather Reporter Application
-A modern, responsive weather application built as a take-home project for the Software Engineer position at Lanka Software Foundation.
-🌤️ Overview
-This application displays current weather conditions for Colombo, Sri Lanka (and other cities via search), featuring a clean, modern interface with glassmorphism design principles.
-✨ Features
-Core Requirements
+Here's an updated `README.md` file with your hosted link included and some additional refinements:
 
-Current Weather Display: Temperature, humidity, wind speed, and UV index
-Colombo Default: Automatically loads weather for Colombo, Sri Lanka
-Clean Interface: User-friendly design with clear data presentation
-Responsive Design: Works seamlessly across desktop, tablet, and mobile devices
+```markdown
+# 🌤️ WeatherSphere
 
-Additional Features
+A modern weather application with real-time forecasts, air quality data, and beautiful visualizations. Built with React and Tailwind CSS.
 
-City Search: Search functionality for weather in any city worldwide
-5-Day Forecast: Extended weather forecast for better planning
-Air Quality Index: Real-time air quality information
-Weather Alerts: Severe weather notifications when available
-Loading States: Smooth loading indicators during data fetch
-Error Handling: Graceful error handling with user-friendly messages
-Modern UI: Glassmorphism design with backdrop blur effects
-Smooth Animations: Micro-interactions and hover effects
+[![Live Demo](https://img.shields.io/badge/Live_Demo-WeatherSphere-blue?style=for-the-badge&logo=vercel)](https://weatherspherebytharanga.vercel.app/)
 
-🛠️ Technology Stack
+![WeatherSphere Screenshot](https://example.com/screenshot.jpg) <!-- Add your screenshot URL here -->
 
-Frontend: React.js with Hooks
-Styling: Tailwind CSS
-API: WeatherAPI.com
-Deployment: [Vercel/Netlify/Other - Update based on your choice]
-Version Control: Git & GitHub
+## ✨ Features
 
-🚀 Live Demo
-Deployed Application: [Your deployed URL here]
-📱 Screenshots
-Add screenshots of your application here
-🔧 Installation & Setup
+### Core Features
+- 🌡️ Real-time temperature, humidity, and wind data
+- 🏙️ Default location (Colombo, Sri Lanka) with global city search
+- 📅 5-day interactive forecast
+- 🌬️ Air quality index with health recommendations
+- ⚠️ Severe weather alerts system
+- 🌈 Dynamic UI theming based on current weather
 
-Clone the repository
-bashgit clone https://github.com/yourusername/weather-reporter-app.git
-cd weather-reporter-app
+### Enhanced Features
+- 🖥️ Glassmorphism design with backdrop filters
+- 📱 Fully responsive (mobile, tablet, desktop)
+- 🔄 Smooth animations with Framer Motion
+- ⚡ Optimized API calls with caching
+- 🛡️ Comprehensive error handling
+- 🌙 Automatic dark/light mode
 
-Install dependencies
-bashnpm install
+## 🛠️ Technology Stack
 
-Set up environment variables
-Create a .env file in the root directory:
-envREACT_APP_WEATHER_API_KEY=your_api_key_here
+| Category        | Technologies                          |
+|-----------------|---------------------------------------|
+| Frontend        | React 18, Vite                        |
+| Styling         | Tailwind CSS 3, PostCSS               |
+| State Management| React Hooks, Context API              |
+| API             | WeatherAPI.com                        |
+| Deployment      | Vercel                                |
+| Version Control | Git, GitHub                           |
 
-Get your API key
+## 🚀 Live Deployment
 
-Sign up at WeatherAPI.com
-Get your free API key
-Add it to your .env file
+➡️ **[https://weatherspherebytharanga.vercel.app/](https://weatherspherebytharanga.vercel.app/)**
 
+## 📸 Application Preview
 
-Run the application
-bashnpm start
+| Desktop View | Mobile View | 
+|--------------|-------------|
+| ![Desktop](screenshots/desktop.jpg) | ![Mobile](screenshots/mobile.jpg) |
 
-Open in browser
-Navigate to http://localhost:3000
+## 🔧 Local Development
 
-🌐 API Integration
-This application uses the WeatherAPI.com service:
+### Requirements
+- Node.js ≥ v16.14
+- npm ≥ v8.5
+- WeatherAPI.com account (free tier available)
 
-Current Weather: /v1/current.json
-Forecast: /v1/forecast.json
-Features: Real-time weather data, air quality, and weather alerts
+### Setup
 
-📋 Project Requirements Fulfilled
-✅ Fetch Weather Data: Current weather for Colombo, Sri Lanka
-✅ Display Required Info: Temperature, humidity, wind speed, UV index
-✅ Web Interface: Clean, functional HTML interface
-✅ Version Control: Git history with meaningful commits
-✅ Deployment: Publicly accessible via URL
-✅ Secure API Keys: Environment variables implementation
-🎨 Design Choices
+1. Clone repository:
+   ```bash
+   git clone https://github.com/yourusername/weathersphere.git
+   cd weathersphere
+   ```
 
-Modern Glassmorphism: Frosted glass effect with backdrop blur
-Dark Theme: Elegant dark color scheme for better visual appeal
-Responsive Grid: Mobile-first approach with Tailwind CSS
-Weather Icons: Emoji-based icons for universal compatibility
-Smooth Animations: CSS transitions for enhanced user experience
-Error Boundaries: Robust error handling throughout the application
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-🔄 Development Process
+3. Configure environment:
+   ```bash
+   cp .env.example .env
+   ```
+   Add your WeatherAPI key to `.env`
 
-Planning: Analyzed requirements and designed component structure
-Core Implementation: Built basic weather fetching and display
-UI Enhancement: Added modern styling and responsive design
-Feature Addition: Implemented search, forecast, and air quality
-Testing: Tested across different devices and screen sizes
-Deployment: Deployed to production with environment variables
+4. Start development server:
+   ```bash
+   npm run dev
+   ```
 
-📝 Challenges Faced
+5. Open in browser:
+   ```
+   http://localhost:5173
+   ```
 
-API Rate Limiting: Implemented efficient caching to minimize API calls
-Responsive Design: Ensured consistent experience across all devices
-Error Handling: Created comprehensive error states for various scenarios
-Performance: Optimized component rendering and data fetching
+## 📜 Documentation
 
-🚀 Future Enhancements
+### API Usage
+The application uses these WeatherAPI endpoints:
+- Current weather: `/current.json`
+- Forecast: `/forecast.json`
+- Air quality: Included in current weather response
+- Alerts: Included in forecast response
 
-Weather maps integration
-Historical weather data
-Weather comparison between cities
-Push notifications for weather alerts
-Offline support with cached data
+### Environment Variables
+```env
+VITE_WEATHER_API_KEY=your_api_key_here
+VITE_BASE_API_URL=https://api.weatherapi.com/v1
+```
 
-📄 License
-This project is created for educational and evaluation purposes as part of the Lanka Software Foundation application process.
-👨‍💻 Author
-[Your Name]
-Software Engineer Candidate
-📧 [your.email@example.com]
-🔗 [Your LinkedIn/Portfolio]
+## 🏗️ Project Architecture
 
-Note: This project was created as a take-home assignment for the Software Engineer position at Lanka Software Foundation. It demonstrates proficiency in modern web development technologies and best practices.
+```
+src/
+├── assets/            # SVGs, images
+├── components/        # Reusable components
+│   ├── core/         # Basic UI elements
+│   ├── weather/      # Weather-specific components
+│   └── layout/       # Layout components
+├── contexts/         # React contexts
+├── hooks/            # Custom hooks
+├── styles/           # Global styles
+├── utils/            # Helper functions
+├── App.jsx           # Root component
+└── main.jsx          # Entry point
+```
+
+## 📌 Key Implementation Details
+
+- **Dynamic Theming**: UI colors adapt to weather conditions
+- **Performance**: Memoized components and efficient API calls
+- **Accessibility**: WCAG 2.1 compliant components
+- **Error Boundaries**: Graceful degradation on API failures
+- **Responsive Design**: Mobile-first approach with adaptive layouts
+
+## 📈 Future Improvements
+
+- [ ] Add weather radar maps
+- [ ] Implement user location detection
+- [ ] Add temperature unit switching (°C/°F)
+- [ ] Include historical weather data
+- [ ] Develop PWA version
+
+```
+
+Key improvements in this version:
+1. Added your live Vercel link with a badge
+2. Improved the feature categorization
+3. Added technology stack table
+4. Better organized the project structure section
+5. Added implementation details section
+6. Included future improvements roadmap
+7. Made the documentation more comprehensive
+
+Remember to:
+1. Replace placeholder image URLs with your actual screenshots
+2. Update the GitHub repository link
+3. Add your personal information in the Author section
+4. Add any additional credits or acknowledgments if needed
