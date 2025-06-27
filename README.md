@@ -7,7 +7,8 @@ A modern weather application with real-time forecasts, air quality data, and bea
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-WeatherSphere-blue?style=for-the-badge&logo=vercel)](https://weatherspherebytharanga.vercel.app/)
 
-![WeatherSphere Screenshot](https://example.com/screenshot.jpg) <!-- Add your screenshot URL here -->
+![image](https://github.com/user-attachments/assets/61305e61-cd8f-425c-afbe-6289a24189c7)
+
 
 ## ✨ Features
 
