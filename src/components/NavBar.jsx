@@ -5,7 +5,7 @@ export default function NavBar() {
     <nav className="bg-gradient-to-tr from-slate-900 via-blue-900 to-indigo-950 py-4 px-6 sm:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
         <div className="flex items-center gap-3">
-          <span className="text-2xl font-bold bg-clip-text text-transparent text-slate-200 tracking-tight">
+          <span className="text-2xl font-bold text-slate-200">
             WeatherSphere
           </span>
           <span className="hidden md:inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-slate-50 bg-green-600 rounded-full">
