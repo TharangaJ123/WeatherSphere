@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const API_KEY = "047eecb5c1114aab9fa80203252706"; // Replace with your actual API key
+const API_KEY = "047eecb5c1114aab9fa80203252706";
 const DEFAULT_CITY = "Colombo";
 
 export default function Weather() {
