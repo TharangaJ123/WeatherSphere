@@ -1,6 +1,6 @@
-Here's an updated `README.md` file with your hosted link included and some additional refinements:
 
-```markdown
+
+
 # 🌤️ WeatherSphere
 
 A modern weather application with real-time forecasts, air quality data, and beautiful visualizations. Built with React and Tailwind CSS.
